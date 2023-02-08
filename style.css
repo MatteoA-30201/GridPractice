@@ -1,19 +1,40 @@
 :root {
-    --dark-blue: #264653;
-    --light-green: #2a9d8f;
-    --yellow: #e9c46a;
+    --text: #bbe4ec;
+    --border: #6e838a;
+    --background: #206369;
     --orange: #f4a261;
-    --salmon: #e76f51;
+    --dashedborder: #96d1d1;
     }
-    .container {
-    color: var(--dark-blue);
+    .container-lg {
+    color: var(--border);
     font-size: 20px;
     font-weight: bold;
     min-height: 100vh;
-    background-color: var(--yellow);
+    background-color: #206369;
     }
     
     .row {
-    border: 1px solid var(--dark-blue);
+    border: 1px solid var(--border);
     min-height: 50px;
+    margin-bottom: 20px;
+    }
+
+    #bottom-row {
+        margin-bottom: 0px;
+    }
+
+    .col-border {
+        min-height: 50px;
+        border: solid 1px #2a3a45;
+        border-right: medium dashed var(--dashedborder);
+        border-left: medium dashed var(--dashedborder);
+        text-align: center;
+        background-color: #2a3a45;
+        opacity: 0.8;
+        color: var(--text);
+    }
+
+    .mn {
+        margin-left: 0px;
+        margin-right: 0px;
     }
